@@ -2,765 +2,690 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Valluri Tutoring Center</title>
+<meta charset="UTF-8">
 
-  <style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f7f9fc;
-      color: #172033;
-    }
+<title>Valluri Tutoring Center</title>
 
 
-    /* =========================
-       HERO SECTION
-    ========================== */
+<style>
 
-    header {
-      min-height: 92vh;
+/* =========================
+   GENERAL
+========================= */
 
-      background:
-        linear-gradient(
-          90deg,
-          rgba(10, 22, 42, 0.88),
-          rgba(10, 22, 42, 0.68)
-        ),
-        url('https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=2000&q=85');
+*{
+  box-sizing:border-box;
+}
 
-      background-size: cover;
-      background-position: center;
+html{
+  scroll-behavior:smooth;
+}
 
-      display: flex;
-      align-items: center;
-
-      padding: 70px 10%;
-    }
-
-
-   .hero {
-  max-width: 1000px;
-  width: 100%;
-  margin: 0 auto;
-  text-align: center;
+body{
+  margin:0;
+  font-family:Arial, Helvetica, sans-serif;
+  background:#f7f9fc;
+  color:#172033;
 }
 
 
-   .logo {
-  display: block;
-  width: 125px;
-  height: 125px;
-  object-fit: cover;
-  border-radius: 18px;
+/* =========================
+   HERO
+========================= */
 
-  margin: 0 auto 25px auto;
+header{
 
-  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  min-height:92vh;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(10,22,42,0.88),
+      rgba(10,22,42,0.68)
+    ),
+    url('https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=2000&q=85');
+
+  background-size:cover;
+  background-position:center;
+
+  display:flex;
+  align-items:center;
+
+  padding:70px 10%;
 }
 
 
-.fall-badge {
-  display: block;
-  width: fit-content;
+.hero{
 
-  background: #238636;
-  color: white;
+  max-width:1000px;
+  width:100%;
 
-  padding: 9px 18px;
-  border-radius: 30px;
+  margin:0 auto;
 
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 1px;
-
-  margin: 0 auto 20px auto;
+  text-align:center;
 }
 
 
-    h1 {
-      color: white;
+.logo{
 
-      font-size: clamp(48px, 6vw, 76px);
-      line-height: 1.05;
+  display:block;
 
-      margin: 0 0 15px 0;
+  width:125px;
+  height:125px;
 
-      letter-spacing: -2px;
-    }
+  object-fit:cover;
 
+  border-radius:18px;
 
-    .subtitle {
-      color: #ffffff;
+  margin:0 auto 25px auto;
 
-      font-size: 31px;
-      font-weight: 400;
-
-      margin-bottom: 28px;
-    }
-
-
-    .hero-details {
-      color: #e6edf3;
-
-      font-size: 19px;
-      font-weight: 600;
-
-      margin: 8px 0;
-    }
-
-
-    .hero-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 14px;
-  margin-top: 32px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.25);
 }
 
 
-    .btn {
-      display: inline-block;
+.fall-badge{
 
-      background: #238636;
-      color: white;
+  display:block;
 
-      padding: 15px 28px;
+  width:fit-content;
 
-      border-radius: 8px;
+  background:#238636;
 
-      text-decoration: none;
+  color:white;
 
-      font-size: 17px;
-      font-weight: 600;
+  padding:9px 18px;
 
-      transition: 0.25s;
-    }
+  border-radius:30px;
 
+  font-size:14px;
 
-    .btn:hover {
-      background: #2ea043;
-      transform: translateY(-2px);
-    }
+  font-weight:700;
 
+  letter-spacing:1px;
 
-    .secondary-btn {
-      background: white;
-      color: #172033;
-    }
-
-
-    .secondary-btn:hover {
-      background: #f0f3f6;
-    }
-
-
-
-    /* =========================
-       GENERAL SECTIONS
-    ========================== */
-
-    section {
-      padding: 85px 10%;
-    }
-
-
-    section:nth-of-type(even) {
-      background: white;
-    }
-
-
-h2 {
-  font-size: 40px;
-  color: #172033;
-  margin-top: 0;
-  margin-bottom: 22px;
-  text-align: center;
-}
-
-    section > p {
-  max-width: 950px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
+  margin:0 auto 20px auto;
 }
 
 
-    h3 {
-      color: #172033;
-      font-size: 22px;
-    }
+h1{
 
+  color:white;
 
-    p {
-      font-size: 18px;
+  font-size:clamp(48px,6vw,76px);
 
-      line-height: 1.75;
+  line-height:1.05;
 
-      color: #57606a;
-    }
+  margin:0 0 15px 0;
 
-
-
-    /* =========================
-       COURSE CARDS
-    ========================== */
-
-    .topics {
-      display: grid;
-
-      grid-template-columns:
-        repeat(auto-fit, minmax(240px, 1fr));
-
-      gap: 22px;
-
-      margin-top: 40px;
-    }
-
-
-    .card {
-      background: white;
-
-      padding: 28px;
-
-      border-radius: 14px;
-
-      border: 1px solid #e6e9ee;
-
-      box-shadow:
-        0 5px 20px rgba(0,0,0,0.05);
-
-      transition: 0.25s;
-    }
-
-
-    .card:hover {
-      transform: translateY(-4px);
-
-      box-shadow:
-        0 10px 28px rgba(0,0,0,0.09);
-    }
-
-.grade-label {
-  display: inline-block;
-  background: #eaf5ed;
-  color: #238636;
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  padding: 7px 12px;
-  border-radius: 20px;
-  margin-bottom: 8px;
+  letter-spacing:-2px;
 }
 
-    /* =========================
-   BOOTCAMP OPTIONS
-========================== */
 
-.bootcamp-section {
-  padding: 85px 10%;
-  background: white;
+.subtitle{
+
+  color:white;
+
+  font-size:31px;
+
+  font-weight:400;
+
+  margin-bottom:28px;
 }
 
-.bootcamp-intro {
-  max-width: 800px;
-  margin: 0 auto 45px auto;
-  text-align: center;
+
+.hero-details{
+
+  color:#e6edf3;
+
+  font-size:19px;
+
+  font-weight:600;
+
+  margin:8px 0;
 }
 
-.bootcamp-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 22px;
-  max-width: 1050px;
-  margin: 0 auto;
+
+.hero-buttons{
+
+  display:flex;
+
+  flex-wrap:wrap;
+
+  justify-content:center;
+
+  gap:14px;
+
+  margin-top:32px;
 }
 
-.bootcamp-option {
-  background: #f7f9fc;
-  border: 1px solid #e6e9ee;
-  border-radius: 14px;
-  padding: 25px 28px;
 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
+.btn{
 
-  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-  transition: 0.25s;
+  display:inline-block;
+
+  background:#238636;
+
+  color:white;
+
+  padding:15px 28px;
+
+  border-radius:8px;
+
+  text-decoration:none;
+
+  font-size:17px;
+
+  font-weight:600;
+
+  transition:0.25s;
 }
 
-.bootcamp-option:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 28px rgba(0,0,0,0.09);
+
+.btn:hover{
+
+  background:#2ea043;
+
+  transform:translateY(-2px);
 }
 
-.bootcamp-info h3 {
-  margin: 0 0 7px 0;
-  font-size: 20px;
+
+.secondary-btn{
+
+  background:white;
+
+  color:#172033;
 }
 
-.bootcamp-date {
-  color: #238636;
-  font-size: 15px;
-  font-weight: 700;
+
+.secondary-btn:hover{
+
+  background:#f0f3f6;
 }
 
-.interest-call-btn {
-  display: inline-block;
-  background: #238636;
-  color: white;
 
-  padding: 12px 18px;
-  border-radius: 8px;
 
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 700;
+/* =========================
+   GENERAL SECTIONS
+========================= */
 
-  white-space: nowrap;
+section{
 
-  transition: 0.25s;
+  padding:85px 10%;
 }
 
-.interest-call-btn:hover {
-  background: #2ea043;
-  transform: translateY(-2px);
+
+section:nth-of-type(even){
+
+  background:white;
 }
 
-@media (max-width: 700px) {
 
-  .bootcamp-grid {
-    grid-template-columns: 1fr;
+h2{
+
+  font-size:40px;
+
+  color:#172033;
+
+  margin-top:0;
+
+  margin-bottom:22px;
+
+  text-align:center;
+}
+
+
+section > p{
+
+  max-width:950px;
+
+  margin-left:auto;
+
+  margin-right:auto;
+
+  text-align:center;
+}
+
+
+h3{
+
+  color:#172033;
+
+  font-size:22px;
+}
+
+
+p{
+
+  font-size:18px;
+
+  line-height:1.75;
+
+  color:#57606a;
+}
+
+
+
+/* =========================
+   COURSE CARDS
+========================= */
+
+.topics{
+
+  display:grid;
+
+  grid-template-columns:
+    repeat(auto-fit,minmax(240px,1fr));
+
+  gap:22px;
+
+  margin-top:40px;
+}
+
+
+.card{
+
+  background:white;
+
+  padding:28px;
+
+  border-radius:14px;
+
+  border:1px solid #e6e9ee;
+
+  box-shadow:
+    0 5px 20px rgba(0,0,0,0.05);
+
+  transition:0.25s;
+}
+
+
+.card:hover{
+
+  transform:translateY(-4px);
+
+  box-shadow:
+    0 10px 28px rgba(0,0,0,0.09);
+}
+
+
+.grade-label{
+
+  display:inline-block;
+
+  background:#eaf5ed;
+
+  color:#238636;
+
+  font-size:13px;
+
+  font-weight:700;
+
+  letter-spacing:1px;
+
+  padding:7px 12px;
+
+  border-radius:20px;
+
+  margin-bottom:8px;
+}
+
+
+
+/* =========================
+   BOOTCAMP SIGN-UP OPTIONS
+========================= */
+
+.bootcamp-section{
+
+  padding:85px 10%;
+
+  background:white;
+}
+
+
+.bootcamp-intro{
+
+  max-width:800px;
+
+  margin:0 auto 45px auto;
+
+  text-align:center;
+}
+
+
+.bootcamp-grid{
+
+  display:grid;
+
+  grid-template-columns:
+    repeat(2,1fr);
+
+  gap:22px;
+
+  max-width:1100px;
+
+  margin:0 auto;
+}
+
+
+.bootcamp-option{
+
+  background:#f7f9fc;
+
+  border:1px solid #e6e9ee;
+
+  border-radius:14px;
+
+  padding:25px 28px;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:space-between;
+
+  gap:20px;
+
+  box-shadow:
+    0 5px 20px rgba(0,0,0,0.05);
+
+  transition:0.25s;
+}
+
+
+.bootcamp-option:hover{
+
+  transform:translateY(-3px);
+
+  box-shadow:
+    0 10px 28px rgba(0,0,0,0.09);
+}
+
+
+.bootcamp-info h3{
+
+  margin:0 0 7px 0;
+
+  font-size:20px;
+}
+
+
+.bootcamp-date{
+
+  color:#238636;
+
+  font-size:15px;
+
+  font-weight:700;
+}
+
+
+.interest-call-btn{
+
+  display:inline-block;
+
+  background:#238636;
+
+  color:white;
+
+  padding:12px 18px;
+
+  border-radius:8px;
+
+  text-decoration:none;
+
+  font-size:14px;
+
+  font-weight:700;
+
+  white-space:nowrap;
+
+  transition:0.25s;
+}
+
+
+.interest-call-btn:hover{
+
+  background:#2ea043;
+
+  transform:translateY(-2px);
+}
+
+
+
+/* =========================
+   TEACHER
+========================= */
+
+.teacher-section{
+
+  display:flex;
+
+  flex-wrap:wrap;
+
+  gap:55px;
+
+  align-items:center;
+
+  margin-top:35px;
+}
+
+
+.teacher-image img{
+
+  width:300px;
+
+  border-radius:18px;
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.15);
+}
+
+
+.teacher-text{
+
+  flex:1;
+
+  min-width:300px;
+}
+
+
+
+/* =========================
+   TESTIMONIALS
+========================= */
+
+.testimonial-box{
+
+  background:white;
+
+  padding:28px;
+
+  border-radius:14px;
+
+  border:1px solid #e6e9ee;
+
+  margin-top:22px;
+
+  box-shadow:
+    0 5px 20px rgba(0,0,0,0.05);
+}
+
+
+.review-button{
+
+  display:inline-block;
+
+  margin-top:30px;
+
+  background:#238636;
+
+  color:white;
+
+  padding:14px 27px;
+
+  border-radius:8px;
+
+  text-decoration:none;
+
+  font-size:17px;
+
+  font-weight:600;
+}
+
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-section{
+
+  background:#172033 !important;
+
+  text-align:center;
+}
+
+
+.contact-section h2{
+
+  color:white;
+}
+
+
+.contact-section p{
+
+  color:#c9d1d9;
+
+  max-width:700px;
+
+  margin-left:auto;
+
+  margin-right:auto;
+}
+
+
+.contact-section .hero-buttons{
+
+  justify-content:center;
+}
+
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+
+  text-align:center;
+
+  padding:35px;
+
+  background:#0d1525;
+
+  color:#aab3c0;
+}
+
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:700px){
+
+  header{
+
+    min-height:90vh;
+
+    padding:50px 7%;
+
+    background-position:60% center;
   }
 
-  .bootcamp-option {
-    flex-direction: column;
-    align-items: flex-start;
+
+  .logo{
+
+    width:100px;
+
+    height:100px;
   }
 
-  .interest-call-btn {
-    width: 100%;
-    text-align: center;
+
+  h1{
+
+    font-size:46px;
+  }
+
+
+  .subtitle{
+
+    font-size:25px;
+  }
+
+
+  .hero-details{
+
+    font-size:16px;
+  }
+
+
+  .hero-buttons{
+
+    flex-direction:column;
+
+    align-items:stretch;
+  }
+
+
+  .btn{
+
+    text-align:center;
+
+    width:100%;
+  }
+
+
+  section{
+
+    padding:65px 7%;
+  }
+
+
+  h2{
+
+    font-size:32px;
+  }
+
+
+  .bootcamp-grid{
+
+    grid-template-columns:1fr;
+  }
+
+
+  .bootcamp-option{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+  }
+
+
+  .interest-call-btn{
+
+    width:100%;
+
+    text-align:center;
   }
 
 }
 
-    <!-- =========================
-     BOOTCAMP SCHEDULE
-========================== -->
-
-<section class="bootcamp-section">
-
-  <h2>Choose Your Fall Math Bootcamp</h2>
-
-  <p class="bootcamp-intro">
-    Select your student's current math level below.
-    All bootcamps include 10 in-person, one-hour classes for $350.
-    Call to learn more or reserve your student's spot.
-  </p>
-
-
-  <div class="bootcamp-grid">
-
-
-    <!-- KINDERGARTEN -->
-
-    <div class="bootcamp-option">
-
-      <div class="bootcamp-info">
-        <h3>Kindergarten Bootcamp</h3>
-        <div class="bootcamp-date">
-          Starting October 4th
-        </div>
-      </div>
-
-      <a class="interest-call-btn"
-         href="tel:+17035093294">
-        I'm Interested — Call
-      </a>
-
-    </div>
-
-
-    <!-- 1ST GRADE -->
-
-    <div class="bootcamp-option">
-
-      <div class="bootcamp-info">
-        <h3>1st Grade Bootcamp</h3>
-        <div class="bootcamp-date">
-          Starting October 4th
-        </div>
-      </div>
-
-      <a class="interest-call-btn"
-         href="tel:+17035093294">
-        I'm Interested — Call
-      </a>
-
-    </div>
-
-
-    <!-- 2ND GRADE -->
-
-    <div class="bootcamp-option">
-
-      <div class="bootcamp-info">
-        <h3>2nd Grade Bootcamp</h3>
-        <div class="bootcamp-date">
-          Starting October 4th
-        </div>
-      </div>
-
-      <a class="interest-call-btn"
-         href="tel:+17035093294">
-        I'm Interested — Call
-      </a>
-
-    </div>
-
-
-    <!-- 3RD GRADE -->
-
-    <div class="bootcamp-option">
-
-      <div class="bootcamp-info">
-        <h3>3rd Grade Bootcamp</h3>
-        <div class="bootcamp-date">
-          Starting October 4th
-        </div>
-      </div>
-
-      <a class="interest-call-btn"
-         href="tel:+17035093294">
-        I'm Interested — Call
-      </a>
-
-    </div>
-
-
-    <!-- 4TH GRADE -->
-
-    <div class="bootcamp-option">
-
-      <div class="bootcamp-info">
-        <h3>4th Grade Bootcamp</h3>
-        <div class="bootcamp-date">
-          Starting October 4th
-        </div>
-      </div>
-
-      <a class="interest-call-btn"
-         href="tel:+17035093294">
-        I'm Interested — Call
-      </a>
-
-    </div>
-
-
-    <!-- 5TH GRADE -->
-
-    <div class="bootcamp-option">
-
-      <div class="bootcamp-info">
-        <h3>5th Grade Bootcamp</h3>
-        <div class="bootcamp-date">
-          Starting October 4th
-        </div>
-      </div>
-
-      <a class="interest-call-btn"
-         href="tel:+17035093294">
-        I'm Interested — Call
-      </a>
-
-    </div>
-
-
-    <!-- 6TH GRADE -->
-
-    <div class="bootcamp-option">
-
-      <div class="bootcamp-info">
-        <h3>6th Grade Bootcamp</h3>
-        <div class="bootcamp-date">
-          Starting October 5th
-        </div>
-      </div>
-
-      <a class="interest-call-btn"
-         href="tel:+17035093294">
-        I'm Interested — Call
-      </a>
-
-    </div>
-
-
-    <!-- PRE-ALGEBRA -->
-
-    <div class="bootcamp-option">
-
-      <div class="bootcamp-info">
-        <h3>Pre-Algebra Bootcamp</h3>
-        <div class="bootcamp-date">
-          Starting October 5th
-        </div>
-      </div>
-
-      <a class="interest-call-btn"
-         href="tel:+17035093294">
-        I'm Interested — Call
-      </a>
-
-    </div>
-
-
-    <!-- ALGEBRA I -->
-
-    <div class="bootcamp-option">
-
-      <div class="bootcamp-info">
-        <h3>Algebra I Bootcamp</h3>
-        <div class="bootcamp-date">
-          Starting October 5th
-        </div>
-      </div>
-
-      <a class="interest-call-btn"
-         href="tel:+17035093294">
-        I'm Interested — Call
-      </a>
-
-    </div>
-
-
-    <!-- GEOMETRY -->
-
-    <div class="bootcamp-option">
-
-      <div class="bootcamp-info">
-        <h3>Geometry Bootcamp</h3>
-        <div class="bootcamp-date">
-          Starting October 5th
-        </div>
-      </div>
-
-      <a class="interest-call-btn"
-         href="tel:+17035093294">
-        I'm Interested — Call
-      </a>
-
-    </div>
-
-
-  </div>
-
-</section>
-    
-    /* =========================
-       TEACHER SECTION
-    ========================== */
-
-    .teacher-section {
-      display: flex;
-
-      flex-wrap: wrap;
-
-      gap: 55px;
-
-      align-items: center;
-
-      margin-top: 35px;
-    }
-
-
-    .teacher-image img {
-      width: 300px;
-
-      border-radius: 18px;
-
-      box-shadow:
-        0 10px 30px rgba(0,0,0,0.15);
-    }
-
-
-    .teacher-text {
-      flex: 1;
-
-      min-width: 300px;
-    }
-
-
-
-    /* =========================
-       TESTIMONIALS
-    ========================== */
-
-    .testimonial-box {
-      background: white;
-
-      padding: 28px;
-
-      border-radius: 14px;
-
-      border: 1px solid #e6e9ee;
-
-      margin-top: 22px;
-
-      box-shadow:
-        0 5px 20px rgba(0,0,0,0.05);
-    }
-
-
-    .review-button {
-      display: inline-block;
-
-      margin-top: 30px;
-
-      background: #238636;
-
-      color: white;
-
-      padding: 14px 27px;
-
-      border-radius: 8px;
-
-      text-decoration: none;
-
-      font-size: 17px;
-
-      font-weight: 600;
-    }
-
-
-
-    /* =========================
-       CONTACT SECTION
-    ========================== */
-
-    .contact-section {
-      background: #172033 !important;
-
-      text-align: center;
-    }
-
-
-    .contact-section h2 {
-      color: white;
-    }
-
-
-    .contact-section p {
-      color: #c9d1d9;
-
-      max-width: 700px;
-
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-
-    .contact-section .hero-buttons {
-      justify-content: center;
-    }
-
-
-
-    /* =========================
-       FOOTER
-    ========================== */
-
-    footer {
-      text-align: center;
-
-      padding: 35px;
-
-      background: #0d1525;
-
-      color: #aab3c0;
-    }
-
-
-
-    /* =========================
-       MOBILE
-    ========================== */
-
-    @media (max-width: 700px) {
-
-      header {
-        min-height: 90vh;
-
-        padding: 50px 7%;
-
-        background-position: 60% center;
-      }
-
-.logo {
-  display: block;
-  width: 125px;
-  height: 125px;
-  object-fit: cover;
-  border-radius: 18px;
-  margin: 0 auto 25px auto;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
-}
-
-
-      h1 {
-        font-size: 46px;
-      }
-
-
-      .subtitle {
-        font-size: 25px;
-      }
-
-
-      .hero-details {
-        font-size: 16px;
-      }
-
-
-      .hero-buttons {
-        flex-direction: column;
-
-        align-items: flex-start;
-      }
-
-
-      .btn {
-        text-align: center;
-
-        width: 100%;
-      }
-
-
-      section {
-        padding: 65px 7%;
-      }
-
-
-      h2 {
-        font-size: 32px;
-      }
-
-    }
-
-  </style>
+</style>
 
 </head>
 
@@ -770,72 +695,77 @@ h2 {
 
 <!-- =========================
      HERO
-========================== -->
+========================= -->
 
 <header>
 
-  <div class="hero">
-
-    <img
-      class="logo"
-      src="Logo_VTC.jpg"
-      alt="Valluri Tutoring Center Logo"
-    >
-
-    <div class="fall-badge">
-      NOW ENROLLING • FALL 2026 MIDTERM BOOTCAMP
-    </div>
+<div class="hero">
 
 
-    <h1>
-      Valluri Tutoring Center
-    </h1>
+<img
+class="logo"
+src="Logo_VTC.jpg"
+alt="Valluri Tutoring Center Logo"
+>
 
 
-    <div class="subtitle">
-      Fall Math Bootcamp
-    </div>
+<div class="fall-badge">
+NOW ENROLLING • FALL 2026 MIDTERM BOOTCAMP
+</div>
 
 
-    <div class="hero-details">
-      Grades K–6 • Pre-Algebra • Algebra I • Geometry
-    </div>
+<h1>
+Valluri Tutoring Center
+</h1>
 
 
-    <div class="hero-details">
-      $350 for 10 Classes • 1 Hour Each • Beginning October 4th
-    </div>
+<div class="subtitle">
+Fall Math Bootcamp
+</div>
 
 
-    <div class="hero-buttons">
-
-      <a
-        class="btn"
-        href="https://docs.google.com/forms/d/e/1FAIpQLSfoHGO6zEyt3RB4F4KqgZ10uV1K2yfDaqlQLuP5KjgnnNPnjg/viewform?usp=publish-editor"
-        target="_blank"
-      >
-        I'm Interested
-      </a>
+<div class="hero-details">
+Math Tutoring from Kindergarten through Geometry
+</div>
 
 
-      <a
-        class="btn secondary-btn"
-        href="tel:+17035093294"
-      >
-        Call Us
-      </a>
+<div class="hero-details">
+$350 • 10 In-Person Classes • 1 Hour Each
+</div>
 
 
-      <a
-        class="btn secondary-btn"
-        href="sms:+17035093294"
-      >
-        Text Us
-      </a>
+<div class="hero-details">
+Bootcamps Begin October 4th & 5th
+</div>
 
-    </div>
 
-  </div>
+<div class="hero-buttons">
+
+
+<a
+class="btn"
+href="#bootcamps">
+Choose Your Bootcamp
+</a>
+
+
+<a
+class="btn secondary-btn"
+href="tel:+17035093294">
+Call Us
+</a>
+
+
+<a
+class="btn secondary-btn"
+href="sms:+17035093294">
+Text Us
+</a>
+
+
+</div>
+
+</div>
 
 </header>
 
@@ -843,69 +773,405 @@ h2 {
 
 <!-- =========================
      FALL PROGRAM
-========================== -->
+========================= -->
 
 <section>
 
-  <h2>Fall Math Bootcamp 2026</h2>
 
-  <p>
-    Math support for students from Kindergarten through Geometry.
-    Our 10-class Fall Bootcamp helps students strengthen their current
-    math skills, review important concepts, and prepare for their midterms.
-  We will have another 10-class session in the spring to prepare for Finals.
-  </p>
-
-  <div class="topics">
-
-    <div class="card">
-      <div class="grade-label">K–2</div>
-
-      <h3>Early Elementary Math</h3>
-
-      <p>
-        Kindergarten • 1st Grade • 2nd Grade
-      </p>
-
-      <p>
-        Build strong foundations in numbers, arithmetic,
-        problem solving, and mathematical thinking.
-      </p>
-    </div>
+<h2>
+Fall Math Bootcamp 2026
+</h2>
 
 
-    <div class="card">
-      <div class="grade-label">3–5</div>
+<p>
 
-      <h3>Elementary Math</h3>
+Math support for students from Kindergarten through Geometry.
+Our 10-class Fall Bootcamp helps students strengthen their current
+math skills, review important concepts, and prepare for their midterms.
 
-      <p>
-        3rd Grade • 4th Grade • 5th Grade
-      </p>
+We will have another 10-class session in the spring to prepare for Finals.
 
-      <p>
-        Strengthen grade-level skills, improve problem solving,
-        and build confidence with more challenging math.
-      </p>
-    </div>
+</p>
 
 
-    <div class="card">
-      <div class="grade-label">MIDDLE & HIGH SCHOOL</div>
+<div class="topics">
 
-      <h3>Advanced Math</h3>
 
-      <p>
-        Pre-Algebra • Algebra I • Geometry
-      </p>
+<div class="card">
 
-      <p>
-        Review important concepts, strengthen problem-solving
-        skills, and prepare for upcoming exams.
-      </p>
-    </div>
+<div class="grade-label">
+K–2
+</div>
 
-  </div>
+<h3>
+Early Elementary Math
+</h3>
+
+<p>
+Kindergarten • 1st Grade • 2nd Grade
+</p>
+
+<p>
+Build strong foundations in numbers, arithmetic,
+problem solving, and mathematical thinking.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<div class="grade-label">
+3–5
+</div>
+
+<h3>
+Elementary Math
+</h3>
+
+<p>
+3rd Grade • 4th Grade • 5th Grade
+</p>
+
+<p>
+Strengthen grade-level skills, improve problem solving,
+and build confidence with more challenging math.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<div class="grade-label">
+MIDDLE & HIGH SCHOOL
+</div>
+
+<h3>
+Advanced Math
+</h3>
+
+<p>
+6th Grade • Pre-Algebra • Algebra I • Geometry
+</p>
+
+<p>
+Review important concepts, strengthen problem-solving
+skills, and prepare for upcoming exams.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     CHOOSE YOUR BOOTCAMP
+========================= -->
+
+<section
+class="bootcamp-section"
+id="bootcamps"
+>
+
+
+<h2>
+Choose Your Fall Math Bootcamp
+</h2>
+
+
+<p class="bootcamp-intro">
+
+Interested in signing up?
+
+Choose your student's math level below and call to learn more
+or reserve a spot.
+
+All bootcamps include 10 in-person, one-hour classes for $350.
+
+</p>
+
+
+
+<div class="bootcamp-grid">
+
+
+<!-- KINDERGARTEN -->
+
+<div class="bootcamp-option">
+
+<div class="bootcamp-info">
+
+<h3>
+Kindergarten Bootcamp
+</h3>
+
+<div class="bootcamp-date">
+Starting October 4th
+</div>
+
+</div>
+
+
+<a
+class="interest-call-btn"
+href="tel:+17035093294">
+Interested? Call to Sign Up
+</a>
+
+</div>
+
+
+
+<!-- FIRST GRADE -->
+
+<div class="bootcamp-option">
+
+<div class="bootcamp-info">
+
+<h3>
+1st Grade Bootcamp
+</h3>
+
+<div class="bootcamp-date">
+Starting October 4th
+</div>
+
+</div>
+
+
+<a
+class="interest-call-btn"
+href="tel:+17035093294">
+Interested? Call to Sign Up
+</a>
+
+</div>
+
+
+
+<!-- SECOND GRADE -->
+
+<div class="bootcamp-option">
+
+<div class="bootcamp-info">
+
+<h3>
+2nd Grade Bootcamp
+</h3>
+
+<div class="bootcamp-date">
+Starting October 4th
+</div>
+
+</div>
+
+
+<a
+class="interest-call-btn"
+href="tel:+17035093294">
+Interested? Call to Sign Up
+</a>
+
+</div>
+
+
+
+<!-- THIRD GRADE -->
+
+<div class="bootcamp-option">
+
+<div class="bootcamp-info">
+
+<h3>
+3rd Grade Bootcamp
+</h3>
+
+<div class="bootcamp-date">
+Starting October 4th
+</div>
+
+</div>
+
+
+<a
+class="interest-call-btn"
+href="tel:+17035093294">
+Interested? Call to Sign Up
+</a>
+
+</div>
+
+
+
+<!-- FOURTH GRADE -->
+
+<div class="bootcamp-option">
+
+<div class="bootcamp-info">
+
+<h3>
+4th Grade Bootcamp
+</h3>
+
+<div class="bootcamp-date">
+Starting October 4th
+</div>
+
+</div>
+
+
+<a
+class="interest-call-btn"
+href="tel:+17035093294">
+Interested? Call to Sign Up
+</a>
+
+</div>
+
+
+
+<!-- FIFTH GRADE -->
+
+<div class="bootcamp-option">
+
+<div class="bootcamp-info">
+
+<h3>
+5th Grade Bootcamp
+</h3>
+
+<div class="bootcamp-date">
+Starting October 4th
+</div>
+
+</div>
+
+
+<a
+class="interest-call-btn"
+href="tel:+17035093294">
+Interested? Call to Sign Up
+</a>
+
+</div>
+
+
+
+<!-- SIXTH GRADE -->
+
+<div class="bootcamp-option">
+
+<div class="bootcamp-info">
+
+<h3>
+6th Grade Bootcamp
+</h3>
+
+<div class="bootcamp-date">
+Starting October 5th
+</div>
+
+</div>
+
+
+<a
+class="interest-call-btn"
+href="tel:+17035093294">
+Interested? Call to Sign Up
+</a>
+
+</div>
+
+
+
+<!-- PRE ALGEBRA -->
+
+<div class="bootcamp-option">
+
+<div class="bootcamp-info">
+
+<h3>
+Pre-Algebra Bootcamp
+</h3>
+
+<div class="bootcamp-date">
+Starting October 5th
+</div>
+
+</div>
+
+
+<a
+class="interest-call-btn"
+href="tel:+17035093294">
+Interested? Call to Sign Up
+</a>
+
+</div>
+
+
+
+<!-- ALGEBRA I -->
+
+<div class="bootcamp-option">
+
+<div class="bootcamp-info">
+
+<h3>
+Algebra I Bootcamp
+</h3>
+
+<div class="bootcamp-date">
+Starting October 5th
+</div>
+
+</div>
+
+
+<a
+class="interest-call-btn"
+href="tel:+17035093294">
+Interested? Call to Sign Up
+</a>
+
+</div>
+
+
+
+<!-- GEOMETRY -->
+
+<div class="bootcamp-option">
+
+<div class="bootcamp-info">
+
+<h3>
+Geometry Bootcamp
+</h3>
+
+<div class="bootcamp-date">
+Starting October 5th
+</div>
+
+</div>
+
+
+<a
+class="interest-call-btn"
+href="tel:+17035093294">
+Interested? Call to Sign Up
+</a>
+
+</div>
+
+
+</div>
 
 </section>
 
@@ -913,62 +1179,73 @@ h2 {
 
 <!-- =========================
      TEACHER
-========================== -->
+========================= -->
 
 <section>
 
-  <h2>Meet Your Teacher</h2>
+
+<h2>
+Meet Your Teacher
+</h2>
 
 
-  <div class="teacher-section">
+<div class="teacher-section">
 
 
-    <div class="teacher-image">
+<div class="teacher-image">
 
-      <img
-        src="Headshot.jpg"
-        alt="Kaushiki Valluri"
-      >
+<img
+src="Headshot.jpg"
+alt="Kaushiki Valluri"
+>
 
-    </div>
-
-
-    <div class="teacher-text">
+</div>
 
 
-      <p>
-        <strong>Kaushiki Valluri</strong> is a Computer Engineer
-        who earned her Bachelor of Science from Virginia Tech and
-        pursued her Master's degree in Engineering Management from
-        Cornell University.
-      </p>
+
+<div class="teacher-text">
 
 
-      <p>
-        Kaushiki has more than 12 years of mathematics tutoring
-        experience, including 7 years of online instruction.
-        She has taught more than 350 students ranging from
-        elementary school through college-level mathematics.
-      </p>
+<p>
+
+<strong>Kaushiki Valluri</strong> is a Computer Engineer
+who earned her Bachelor of Science from Virginia Tech and
+pursued her Master's degree in Engineering Management from
+Cornell University.
+
+</p>
 
 
-      <p>
-        Her teaching style focuses on keeping students engaged,
-        explaining difficult concepts in an easy-to-understand way,
-        and helping students become more confident in mathematics.
-      </p>
+<p>
+
+Kaushiki has more than 12 years of mathematics tutoring
+experience. She has taught more than 350 students ranging
+from elementary school through college-level mathematics.
+
+</p>
 
 
-      <p>
-        In addition to her engineering career, Kaushiki works as a
-        substitute teacher because of her passion for education
-        and working with students.
-      </p>
+<p>
+
+Her teaching style focuses on keeping students engaged,
+explaining difficult concepts in an easy-to-understand way,
+and helping students become more confident in mathematics.
+
+</p>
 
 
-    </div>
+<p>
 
-  </div>
+In addition to her engineering career, Kaushiki works as a
+substitute teacher because of her passion for education
+and working with students.
+
+</p>
+
+
+</div>
+
+</div>
 
 </section>
 
@@ -976,64 +1253,87 @@ h2 {
 
 <!-- =========================
      HOW IT WORKS
-========================== -->
+========================= -->
 
 <section>
 
-  <h2>How the Bootcamp Works</h2>
+
+<h2>
+How the Bootcamp Works
+</h2>
 
 
-  <div class="topics">
+<div class="topics">
 
-
-    <div class="card">
-
-      <h3>10 Classes</h3>
-
-      <p>
-        Students will attend 10 math sessions during the
-        Fall Bootcamp to get them prepared for their midterms after Q2.
-      </p>
-
-    </div>
-
-
-    <div class="card">
-
-      <h3>1 Hour Each</h3>
-
-      <p>
-        Each class provides one focused hour of instruction
-        and guided practice.
-      </p>
-
-    </div>
 
 <div class="card">
 
-  <h3>In-Person Classes</h3>
+<h3>
+10 Classes
+</h3>
 
-  <p>
-    Classes are taught in person, giving students the opportunity
-    to ask questions, participate, and receive hands-on support.
-  </p>
+<p>
+
+Students will attend 10 math sessions during the
+Fall Bootcamp to help prepare them for their midterms after Q2.
+
+</p>
 
 </div>
 
 
-    <div class="card">
 
-      <h3>Small Groups</h3>
+<div class="card">
 
-      <p>
-        Small-group instruction allows students to participate
-        and receive additional support.
-      </p>
+<h3>
+1 Hour Each
+</h3>
 
-    </div>
+<p>
+
+Each class provides one focused hour of instruction
+and guided practice.
+
+</p>
+
+</div>
 
 
-  </div>
+
+<div class="card">
+
+<h3>
+In-Person Classes
+</h3>
+
+<p>
+
+Classes are taught in person, giving students the opportunity
+to ask questions, participate, and receive hands-on support.
+
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+Small Groups
+</h3>
+
+<p>
+
+Small-group instruction allows students to participate
+and receive additional support.
+
+</p>
+
+</div>
+
+
+</div>
 
 </section>
 
@@ -1041,51 +1341,50 @@ h2 {
 
 <!-- =========================
      CONTACT
-========================== -->
+========================= -->
 
 <section class="contact-section">
 
-  <h2>
-    Interested in the Fall Math Bootcamp?
-  </h2>
+
+<h2>
+Interested in the Fall Math Bootcamp?
+</h2>
 
 
-  <p>
-    Contact Valluri Tutoring Center to learn more about
-    class schedules, availability, and finding the right
-    course for your student.
-  </p>
+<p>
+
+Contact Valluri Tutoring Center to learn more about
+class schedules, availability, and finding the right
+course for your student.
+
+</p>
 
 
-  <div class="hero-buttons">
+<div class="hero-buttons">
 
 
-    <a
-      class="btn"
-      href="tel:+17035093294"
-    >
-      Call Us
-    </a>
+<a
+class="btn"
+href="tel:+17035093294">
+Call Us
+</a>
 
 
-    <a
-      class="btn"
-      href="sms:+17035093294"
-    >
-      Text Us
-    </a>
+<a
+class="btn"
+href="sms:+17035093294">
+Text Us
+</a>
 
 
-    <a
-      class="btn secondary-btn"
-      href="https://docs.google.com/forms/d/e/1FAIpQLSfoHGO6zEyt3RB4F4KqgZ10uV1K2yfDaqlQLuP5KjgnnNPnjg/viewform?usp=publish-editor"
-      target="_blank"
-    >
-      I'm Interested
-    </a>
+<a
+class="btn secondary-btn"
+href="#bootcamps">
+Choose Your Bootcamp
+</a>
 
 
-  </div>
+</div>
 
 </section>
 
@@ -1093,61 +1392,73 @@ h2 {
 
 <!-- =========================
      TESTIMONIALS
-========================== -->
+========================= -->
 
 <section>
 
-  <h2>What Students Say</h2>
+
+<h2>
+What Students Say
+</h2>
 
 
-  <div class="testimonial-box">
+<div class="testimonial-box">
 
-    <p>
-      ★★★★★
-      <br><br>
+<p>
 
-      "Kaushiki is the best teacher EVER. I have had her for over
-      6 years throughout Elementary School to now 11th Grade.
-      She explains concepts clearly and makes learning much less
-      stressful."
-    </p>
+★★★★★
+<br><br>
 
-  </div>
+"Kaushiki is the best teacher EVER. I have had her for over
+6 years throughout Elementary School to now 11th Grade.
+She explains concepts clearly and makes learning much less stressful."
 
+</p>
 
-  <div class="testimonial-box">
-
-    <p>
-      ★★★★★
-      <br><br>
-
-      "Very patient, organized, and encouraging.
-      I became much more confident in math after working with her."
-    </p>
-
-  </div>
+</div>
 
 
-  <div class="testimonial-box">
 
-    <p>
-      ★★★★★
-      <br><br>
+<div class="testimonial-box">
 
-      "The online sessions were structured and easy to follow.
-      Highly recommend Valluri Tutoring Center."
-    </p>
+<p>
 
-  </div>
+★★★★★
+<br><br>
+
+"Very patient, organized, and encouraging.
+I became much more confident in math after working with her."
+
+</p>
+
+</div>
 
 
-  <a
-    class="review-button"
-    href="https://docs.google.com/forms/d/e/1FAIpQLSfsG1L4-kzKG2BBt8Y2DHQgkS6fnd7YrWVT1UuA9v8qPwv_kA/viewform"
-    target="_blank"
-  >
-    Leave a Review
-  </a>
+
+<div class="testimonial-box">
+
+<p>
+
+★★★★★
+<br><br>
+
+"The online sessions were structured and easy to follow.
+Highly recommend Valluri Tutoring Center."
+
+</p>
+
+</div>
+
+
+
+<a
+class="review-button"
+href="https://docs.google.com/forms/d/e/1FAIpQLSfsG1L4-kzKG2BBt8Y2DHQgkS6fnd7YrWVT1UuA9v8qPwv_kA/viewform"
+target="_blank">
+
+Leave a Review
+
+</a>
 
 
 </section>
@@ -1156,7 +1467,7 @@ h2 {
 
 <footer>
 
-  © 2026 Valluri Tutoring Center
+© 2026 Valluri Tutoring Center
 
 </footer>
 
