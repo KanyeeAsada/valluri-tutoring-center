@@ -50,9 +50,12 @@
     }
 
 
-    .hero {
-      max-width: 780px;
-    }
+   .hero {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
 
 
     .logo {
@@ -66,21 +69,17 @@
     }
 
 
-    .fall-badge {
-      display: table;
-
-      background: #238636;
-      color: white;
-
-      padding: 9px 18px;
-      border-radius: 30px;
-
-      font-size: 14px;
-      font-weight: 700;
-      letter-spacing: 1px;
-
-      margin-bottom: 20px;
-    }
+   .fall-badge {
+  display: inline-block;
+  background: #238636;
+  color: white;
+  padding: 9px 18px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
 
 
     h1 {
@@ -116,13 +115,12 @@
 
 
     .hero-buttons {
-      display: flex;
-      flex-wrap: wrap;
-
-      gap: 14px;
-
-      margin-top: 32px;
-    }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 32px;
+}
 
 
     .btn {
@@ -398,11 +396,15 @@ h2 {
         background-position: 60% center;
       }
 
-
-      .logo {
-        width: 100px;
-        height: 100px;
-      }
+.logo {
+  display: block;
+  width: 125px;
+  height: 125px;
+  object-fit: cover;
+  border-radius: 18px;
+  margin: 0 auto 25px auto;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
 
 
       h1 {
