@@ -9,254 +9,496 @@
 
   <style>
 
-    body{
-      margin:0;
-      font-family:Arial, sans-serif;
-      background:#0d1117;
-      color:white;
+    * {
+      box-sizing: border-box;
     }
 
-    header{
-      height:100vh;
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f7f9fc;
+      color: #172033;
+    }
+
+
+    /* =========================
+       HERO SECTION
+    ========================== */
+
+    header {
+      min-height: 92vh;
+
       background:
-      linear-gradient(rgba(0,0,0,0.7),
-      rgba(0,0,0,0.7)),
-      url('https://images.unsplash.com/photo-1509228468518-180dd4864904?q=80&w=2070&auto=format&fit=crop');
+        linear-gradient(
+          90deg,
+          rgba(10, 22, 42, 0.88),
+          rgba(10, 22, 42, 0.68)
+        ),
+        url('https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=2000&q=85');
 
-      background-size:cover;
-      background-position:center;
+      background-size: cover;
+      background-position: center;
 
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      text-align:center;
-      padding:20px;
+      display: flex;
+      align-items: center;
+
+      padding: 70px 10%;
     }
 
-    .hero{
-      max-width:800px;
+
+    .hero {
+      max-width: 780px;
     }
 
-    .logo{
-  width:180px;
-  margin-bottom:25px;
-  border-radius:20px;
-}
 
-    .fall-badge{
-  display:inline-block;
-  background:#238636;
-  padding:8px 18px;
-  border-radius:20px;
-  font-size:16px;
-  font-weight:bold;
-  letter-spacing:1px;
-  margin-bottom:10px;
-}
+    .logo {
+      width: 125px;
+      height: 125px;
+      object-fit: cover;
+      border-radius: 18px;
+      margin-bottom: 25px;
 
-.hero-description{
-  font-size:20px;
-  line-height:1.6;
-  max-width:700px;
-  margin:0 auto 20px;
-  color:#c9d1d9;
-}
-
-.hero-details{
-  font-size:19px;
-  font-weight:bold;
-  margin:10px 0;
-}
-
-.hero-buttons{
-  margin-top:35px;
-  display:flex;
-  justify-content:center;
-  gap:15px;
-  flex-wrap:wrap;
-}
-
-.call-btn{
-  background:#1f6feb;
-}
-
-.call-btn:hover{
-  background:#388bfd;
-}
-
-.text-btn{
-  background:#8957e5;
-}
-
-.text-btn:hover{
-  background:#a371f7;
-}
-
-    h1{
-      font-size:70px;
-      margin-bottom:20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
     }
 
-    .subtitle{
-      font-size:28px;
-      color:#c9d1d9;
-      margin-bottom:40px;
+
+    .fall-badge {
+      display: table;
+
+      background: #238636;
+      color: white;
+
+      padding: 9px 18px;
+      border-radius: 30px;
+
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 1px;
+
+      margin-bottom: 20px;
     }
 
-    .btn{
-      background:#238636;
-      color:white;
-      padding:18px 35px;
-      text-decoration:none;
-      border-radius:10px;
-      font-size:22px;
-      transition:0.3s;
+
+    h1 {
+      color: white;
+
+      font-size: clamp(48px, 6vw, 76px);
+      line-height: 1.05;
+
+      margin: 0 0 15px 0;
+
+      letter-spacing: -2px;
     }
 
-    .course-buttons{
-  margin-top:30px;
-  display:flex;
-  gap:20px;
-  flex-wrap:wrap;
-}
 
-.course-btn{
-  background:#161b22;
-  color:white;
-  padding:15px 25px;
-  border-radius:10px;
-  text-decoration:none;
-  border:1px solid #30363d;
-  transition:0.3s;
-}
+    .subtitle {
+      color: #ffffff;
 
-.course-btn:hover{
-  background:#238636;
-}
+      font-size: 31px;
+      font-weight: 400;
 
-    .btn:hover{
-      background:#2ea043;
+      margin-bottom: 28px;
     }
 
-    section{
-      padding:80px 10%;
+
+    .hero-details {
+      color: #e6edf3;
+
+      font-size: 19px;
+      font-weight: 600;
+
+      margin: 8px 0;
     }
 
-    h2{
-      font-size:42px;
-      margin-bottom:20px;
-      color:#58a6ff;
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+
+      gap: 14px;
+
+      margin-top: 32px;
     }
 
-    p{
-      font-size:20px;
-      line-height:1.8;
-      color:#c9d1d9;
+
+    .btn {
+      display: inline-block;
+
+      background: #238636;
+      color: white;
+
+      padding: 15px 28px;
+
+      border-radius: 8px;
+
+      text-decoration: none;
+
+      font-size: 17px;
+      font-weight: 600;
+
+      transition: 0.25s;
     }
 
-    .topics{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-      gap:25px;
-      margin-top:40px;
+
+    .btn:hover {
+      background: #2ea043;
+      transform: translateY(-2px);
     }
 
-    .card{
-      background:#161b22;
-      padding:30px;
-      border-radius:15px;
+
+    .secondary-btn {
+      background: white;
+      color: #172033;
     }
 
-    .teacher-section{
-  display:flex;
-  flex-wrap:wrap;
-  gap:40px;
-  align-items:center;
-  margin-top:40px;
-}
 
-.teacher-image img{
-  width:300px;
-  border-radius:20px;
-  box-shadow:0 0 20px rgba(0,0,0,0.5);
-}
+    .secondary-btn:hover {
+      background: #f0f3f6;
+    }
 
-.teacher-text{
-  flex:1;
-  min-width:300px;
-}
 
-.testimonial-box{
-  background:#161b22;
-  padding:25px;
-  border-radius:15px;
-  margin-top:25px;
-}
 
-.review-button{
-  display:inline-block;
-  margin-top:30px;
-  background:#238636;
-  color:white;
-  padding:15px 30px;
-  border-radius:10px;
-  text-decoration:none;
-  font-size:18px;
-}
+    /* =========================
+       GENERAL SECTIONS
+    ========================== */
 
-    footer{
-      text-align:center;
-      padding:40px;
-      background:#161b22;
-      color:#8b949e;
+    section {
+      padding: 85px 10%;
+    }
+
+
+    section:nth-of-type(even) {
+      background: white;
+    }
+
+
+    h2 {
+      font-size: 40px;
+
+      color: #172033;
+
+      margin-top: 0;
+      margin-bottom: 22px;
+    }
+
+
+    h3 {
+      color: #172033;
+      font-size: 22px;
+    }
+
+
+    p {
+      font-size: 18px;
+
+      line-height: 1.75;
+
+      color: #57606a;
+    }
+
+
+
+    /* =========================
+       COURSE CARDS
+    ========================== */
+
+    .topics {
+      display: grid;
+
+      grid-template-columns:
+        repeat(auto-fit, minmax(240px, 1fr));
+
+      gap: 22px;
+
+      margin-top: 40px;
+    }
+
+
+    .card {
+      background: white;
+
+      padding: 28px;
+
+      border-radius: 14px;
+
+      border: 1px solid #e6e9ee;
+
+      box-shadow:
+        0 5px 20px rgba(0,0,0,0.05);
+
+      transition: 0.25s;
+    }
+
+
+    .card:hover {
+      transform: translateY(-4px);
+
+      box-shadow:
+        0 10px 28px rgba(0,0,0,0.09);
+    }
+
+
+
+    /* =========================
+       TEACHER SECTION
+    ========================== */
+
+    .teacher-section {
+      display: flex;
+
+      flex-wrap: wrap;
+
+      gap: 55px;
+
+      align-items: center;
+
+      margin-top: 35px;
+    }
+
+
+    .teacher-image img {
+      width: 300px;
+
+      border-radius: 18px;
+
+      box-shadow:
+        0 10px 30px rgba(0,0,0,0.15);
+    }
+
+
+    .teacher-text {
+      flex: 1;
+
+      min-width: 300px;
+    }
+
+
+
+    /* =========================
+       TESTIMONIALS
+    ========================== */
+
+    .testimonial-box {
+      background: white;
+
+      padding: 28px;
+
+      border-radius: 14px;
+
+      border: 1px solid #e6e9ee;
+
+      margin-top: 22px;
+
+      box-shadow:
+        0 5px 20px rgba(0,0,0,0.05);
+    }
+
+
+    .review-button {
+      display: inline-block;
+
+      margin-top: 30px;
+
+      background: #238636;
+
+      color: white;
+
+      padding: 14px 27px;
+
+      border-radius: 8px;
+
+      text-decoration: none;
+
+      font-size: 17px;
+
+      font-weight: 600;
+    }
+
+
+
+    /* =========================
+       CONTACT SECTION
+    ========================== */
+
+    .contact-section {
+      background: #172033 !important;
+
+      text-align: center;
+    }
+
+
+    .contact-section h2 {
+      color: white;
+    }
+
+
+    .contact-section p {
+      color: #c9d1d9;
+
+      max-width: 700px;
+
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+
+    .contact-section .hero-buttons {
+      justify-content: center;
+    }
+
+
+
+    /* =========================
+       FOOTER
+    ========================== */
+
+    footer {
+      text-align: center;
+
+      padding: 35px;
+
+      background: #0d1525;
+
+      color: #aab3c0;
+    }
+
+
+
+    /* =========================
+       MOBILE
+    ========================== */
+
+    @media (max-width: 700px) {
+
+      header {
+        min-height: 90vh;
+
+        padding: 50px 7%;
+
+        background-position: 60% center;
+      }
+
+
+      .logo {
+        width: 100px;
+        height: 100px;
+      }
+
+
+      h1 {
+        font-size: 46px;
+      }
+
+
+      .subtitle {
+        font-size: 25px;
+      }
+
+
+      .hero-details {
+        font-size: 16px;
+      }
+
+
+      .hero-buttons {
+        flex-direction: column;
+
+        align-items: flex-start;
+      }
+
+
+      .btn {
+        text-align: center;
+
+        width: 100%;
+      }
+
+
+      section {
+        padding: 65px 7%;
+      }
+
+
+      h2 {
+        font-size: 32px;
+      }
+
     }
 
   </style>
+
 </head>
 
+
 <body>
+
+
+<!-- =========================
+     HERO
+========================== -->
 
 <header>
 
   <div class="hero">
 
-    <img class="logo" src="Logo_VTC.jpg" alt="Valluri Tutoring Center Logo">
+    <img
+      class="logo"
+      src="Logo_VTC.jpg"
+      alt="Valluri Tutoring Center Logo"
+    >
 
-    <div class="fall-badge">NOW ENROLLING • FALL 2026</div>
+    <div class="fall-badge">
+      NOW ENROLLING • FALL 2026
+    </div>
 
-    <h1>Valluri Tutoring Center</h1>
+
+    <h1>
+      Valluri Tutoring Center
+    </h1>
+
 
     <div class="subtitle">
       Fall Math Bootcamp
     </div>
 
-    <p class="hero-description">
-      10 focused, one-hour math classes designed to strengthen skills,
-      build confidence, and help students prepare for the second half
-      of the school year and upcoming exams.
-    </p>
 
     <div class="hero-details">
       Grades 2–5 • Pre-Algebra • Algebra I • Geometry
     </div>
 
+
     <div class="hero-details">
       10 Classes • 1 Hour Each • October–December 2026
     </div>
 
+
     <div class="hero-buttons">
 
-      <a class="btn"
-         href="https://docs.google.com/forms/d/e/1FAIpQLSfoHGO6zEyt3RB4F4KqgZ10uV1K2yfDaqlQLuP5KjgnnNPnjg/viewform?usp=publish-editor"
-         target="_blank">
+      <a
+        class="btn"
+        href="https://docs.google.com/forms/d/e/1FAIpQLSfoHGO6zEyt3RB4F4KqgZ10uV1K2yfDaqlQLuP5KjgnnNPnjg/viewform?usp=publish-editor"
+        target="_blank"
+      >
         I'm Interested
       </a>
 
-      <a class="btn call-btn" href="tel:+17035093294">
+
+      <a
+        class="btn secondary-btn"
+        href="tel:+1XXXXXXXXXX"
+      >
         Call Us
       </a>
 
-      <a class="btn text-btn" href="sms:+17035093294">
+
+      <a
+        class="btn secondary-btn"
+        href="sms:+1XXXXXXXXXX"
+      >
         Text Us
       </a>
 
@@ -266,301 +508,344 @@
 
 </header>
 
+
+
+<!-- =========================
+     FALL PROGRAM
+========================== -->
+
 <section>
 
   <h2>Fall Math Bootcamp 2026</h2>
 
   <p>
-    Give your student extra support before the second half of the school year.
-    Our Fall Math Bootcamp includes 10 live, one-hour online classes focused
-    on reviewing important concepts, strengthening problem-solving skills,
-    building confidence, and helping students stay ahead in math.
+    Our Fall Math Bootcamp gives students additional math support
+    throughout the fall semester. Students will review important
+    concepts, strengthen areas where they need additional practice,
+    and prepare for upcoming assessments.
   </p>
 
-  <p>
-    For middle and high school students, sessions will also focus on reviewing
-    important material and preparing for upcoming midyear and midterm exams.
-  </p>
 
   <div class="topics">
+
 
     <div class="card">
       <h3>2nd Grade Math</h3>
-      <p>10 one-hour classes focused on building strong foundational math skills.</p>
+      <p>
+        Strengthen foundational math skills and build confidence.
+      </p>
     </div>
+
 
     <div class="card">
       <h3>3rd Grade Math</h3>
-      <p>10 one-hour classes focused on strengthening core math concepts and problem solving.</p>
+      <p>
+        Reinforce important concepts and develop stronger
+        problem-solving skills.
+      </p>
     </div>
+
 
     <div class="card">
       <h3>4th Grade Math</h3>
-      <p>10 one-hour classes focused on reinforcing classroom learning and building confidence.</p>
+      <p>
+        Review classroom concepts and strengthen core math skills.
+      </p>
     </div>
+
 
     <div class="card">
       <h3>5th Grade Math</h3>
-      <p>10 one-hour classes designed to strengthen important skills and prepare students for more advanced math.</p>
+      <p>
+        Strengthen key concepts and prepare for more advanced math.
+      </p>
     </div>
+
 
     <div class="card">
       <h3>Pre-Algebra</h3>
-      <p>10 one-hour classes reviewing key concepts and preparing students for upcoming exams.</p>
+      <p>
+        Review important Pre-Algebra concepts and prepare for
+        upcoming exams.
+      </p>
     </div>
+
 
     <div class="card">
       <h3>Algebra I</h3>
-      <p>10 one-hour classes focused on reinforcing Algebra I concepts and exam preparation.</p>
+      <p>
+        Reinforce Algebra I concepts and practice important
+        problem-solving techniques.
+      </p>
     </div>
+
 
     <div class="card">
       <h3>Geometry</h3>
-      <p>10 one-hour classes focused on important Geometry concepts, problem solving, and exam preparation.</p>
+      <p>
+        Review key Geometry concepts and prepare for upcoming
+        assessments.
+      </p>
     </div>
+
 
   </div>
 
 </section>
 
-  <section>
 
-  <h2>About the Teacher</h2>
+
+<!-- =========================
+     TEACHER
+========================== -->
+
+<section>
+
+  <h2>Meet Your Teacher</h2>
+
 
   <div class="teacher-section">
 
+
     <div class="teacher-image">
-      <img src="Headshot.jpg" alt="Kaushiki Valluri">
+
+      <img
+        src="Headshot.jpg"
+        alt="Kaushiki Valluri"
+      >
+
     </div>
+
 
     <div class="teacher-text">
 
-      <p>
-        Kaushiki Valluri is a Computer Engineer who graduated with a Bachelor of Science from Virginia Tech.
-        She pursued her Master's degree in Engineering Management from Cornell University.
-      </p>
 
       <p>
-        She graduated from LCPS schools where she was heavily involved in academics,
-        leadership, athletics, and extracurricular activities. Throughout her school years,
-        she served as Class President, Homecoming Queen, Prom Queen, and Tennis Captain.
+        <strong>Kaushiki Valluri</strong> is a Computer Engineer
+        who earned her Bachelor of Science from Virginia Tech and
+        pursued her Master's degree in Engineering Management from
+        Cornell University.
       </p>
+
 
       <p>
-        Kaushiki has been tutoring mathematics for over 12 years, including 7 years of online instruction.
-        She excels at helping students build confidence, strengthen foundational math skills,
-        and prepare for academic success. She keeps students engaged, constantly keeps them focused during her session, 
-        and makes sure that they succeed.
+        Kaushiki has more than 12 years of mathematics tutoring
+        experience, including 7 years of online instruction.
+        She has taught more than 350 students ranging from
+        elementary school through college-level mathematics.
       </p>
 
-        <p>
-        Kaushiki also works as a Substitute teacher, along with her daily Engineering work, due to her passion in Teaching.
-        She has taught over 350 students during the past 12 years, many of whom now attend prestigious Universities across the country.  
-      </p>
 
       <p>
-        She has received many testimonials and positive reviews from students and families she has worked with in the past.
-        Today, she works for a renowned engineering company while continuing to expand Valluri Tutoring Center.
+        Her teaching style focuses on keeping students engaged,
+        explaining difficult concepts in an easy-to-understand way,
+        and helping students become more confident in mathematics.
       </p>
+
+
+      <p>
+        In addition to her engineering career, Kaushiki works as a
+        substitute teacher because of her passion for education
+        and working with students.
+      </p>
+
 
     </div>
 
   </div>
 
 </section>
-  
-<section>
 
-  <h2>What Students Will Work On</h2>
 
-  <div class="topics">
 
-    <div class="card">
-      <h3>Review</h3>
-      <p>
-        Review important concepts students have learned during the first
-        part of the school year.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Strengthen</h3>
-      <p>
-        Identify areas where students need extra help and strengthen
-        those skills through guided practice.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Practice</h3>
-      <p>
-        Work through problems together and learn how to approach
-        challenging math questions step by step.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Prepare</h3>
-      <p>
-        Older students will review key material and practice problems
-        to prepare for upcoming midyear and midterm exams.
-      </p>
-    </div>
-
-  </div>
-
-</section>
+<!-- =========================
+     HOW IT WORKS
+========================== -->
 
 <section>
 
-  <h2>How the Fall Bootcamp Works</h2>
+  <h2>How the Bootcamp Works</h2>
+
 
   <div class="topics">
 
+
     <div class="card">
+
       <h3>10 Classes</h3>
-      <p>Students attend 10 structured math sessions during the Fall Bootcamp.</p>
+
+      <p>
+        Students attend 10 structured math sessions during the
+        Fall Bootcamp.
+      </p>
+
     </div>
 
+
     <div class="card">
+
       <h3>1 Hour Each</h3>
-      <p>Each class is one hour, giving students focused instruction and practice.</p>
+
+      <p>
+        Each class provides one focused hour of instruction
+        and guided practice.
+      </p>
+
     </div>
 
-    <div class="card">
-      <h3>Live on Zoom</h3>
-      <p>Classes are taught live so students can ask questions and interact with the teacher.</p>
-    </div>
 
     <div class="card">
-      <h3>Small Group Learning</h3>
-      <p>Students receive guided instruction, practice, and support throughout each session.</p>
+
+      <h3>Live Online</h3>
+
+      <p>
+        Classes are conducted live through Zoom so students
+        can interact and ask questions.
+      </p>
+
     </div>
+
+
+    <div class="card">
+
+      <h3>Small Groups</h3>
+
+      <p>
+        Small-group instruction allows students to participate
+        and receive additional support.
+      </p>
+
+    </div>
+
 
   </div>
 
 </section>
 
-  <section class="contact-section">
 
-  <h2>Interested in the Fall Math Bootcamp?</h2>
+
+<!-- =========================
+     CONTACT
+========================== -->
+
+<section class="contact-section">
+
+  <h2>
+    Interested in the Fall Math Bootcamp?
+  </h2>
+
 
   <p>
-    Have questions or want to find the right class for your student?
-    Call or text Valluri Tutoring Center to learn more about class
-    schedules, availability, and registration.
+    Contact Valluri Tutoring Center to learn more about
+    class schedules, availability, and finding the right
+    course for your student.
   </p>
+
 
   <div class="hero-buttons">
 
-    <a class="btn call-btn" href="tel:+1XXXXXXXXXX">
+
+    <a
+      class="btn"
+      href="tel:+1XXXXXXXXXX"
+    >
       Call Us
     </a>
 
-    <a class="btn text-btn" href="sms:+1XXXXXXXXXX">
+
+    <a
+      class="btn"
+      href="sms:+1XXXXXXXXXX"
+    >
       Text Us
     </a>
 
-    <a class="btn"
-       href="https://docs.google.com/forms/d/e/1FAIpQLSfoHGO6zEyt3RB4F4KqgZ10uV1K2yfDaqlQLuP5KjgnnNPnjg/viewform?usp=publish-editor"
-       target="_blank">
+
+    <a
+      class="btn secondary-btn"
+      href="https://docs.google.com/forms/d/e/1FAIpQLSfoHGO6zEyt3RB4F4KqgZ10uV1K2yfDaqlQLuP5KjgnnNPnjg/viewform?usp=publish-editor"
+      target="_blank"
+    >
       I'm Interested
     </a>
+
 
   </div>
 
 </section>
-  
-  
+
+
+
+<!-- =========================
+     TESTIMONIALS
+========================== -->
+
 <section>
 
-<h2>Registration & Payment</h2>
+  <h2>What Students Say</h2>
 
-<p>
-Students may register through the interest form at the top of this website.
-  <br>
-Once registration information is reviewed and placement is confirmed,
-payment instructions will be sent directly via email.
-</p>
 
-<p>
+  <div class="testimonial-box">
 
-<strong>Accepted Payment Method:</strong><br><br>
+    <p>
+      ★★★★★
+      <br><br>
 
-💵 Zelle
+      "Kaushiki is the best teacher EVER. I have had her for over
+      6 years throughout Elementary School to now 11th Grade.
+      She explains concepts clearly and makes learning much less
+      stressful."
+    </p>
 
-</p>
+  </div>
+
+
+  <div class="testimonial-box">
+
+    <p>
+      ★★★★★
+      <br><br>
+
+      "Very patient, organized, and encouraging.
+      I became much more confident in math after working with her."
+    </p>
+
+  </div>
+
+
+  <div class="testimonial-box">
+
+    <p>
+      ★★★★★
+      <br><br>
+
+      "The online sessions were structured and easy to follow.
+      Highly recommend Valluri Tutoring Center."
+    </p>
+
+  </div>
+
+
+  <a
+    class="review-button"
+    href="https://docs.google.com/forms/d/e/1FAIpQLSfsG1L4-kzKG2BBt8Y2DHQgkS6fnd7YrWVT1UuA9v8qPwv_kA/viewform"
+    target="_blank"
+  >
+    Leave a Review
+  </a>
+
 
 </section>
 
- <section>
-
-<h2>Student Testimonials</h2>
-
-<div class="testimonial-box">
-
-<p>
-
-★★★★★ 5/5
-
-<br><br>
-
-"Kaushiki is the best teacher EVER. I have had her for over
-6 years throughout Elementary School to now 11th Grade.
-She explains concepts clearly and makes learning much less stressful."
-
-</p>
-
-</div>
 
 
-<div class="testimonial-box">
-
-<p>
-
-★★★★★ 5/5
-
-<br><br>
-
-"Very patient, organized, and encouraging.
-I became much more confident in math after working with her."
-
-</p>
-
-</div>
-
-
-<div class="testimonial-box">
-
-<p>
-
-★★★★★ 5/5
-
-<br><br>
-
-"The online sessions were structured and easy to follow.
-Highly recommend Valluri Tutoring Center."
-
-</p>
-
-</div>
-
-
-<a class="review-button"
-href="https://docs.google.com/forms/d/e/1FAIpQLSfsG1L4-kzKG2BBt8Y2DHQgkS6fnd7YrWVT1UuA9v8qPwv_kA/viewform"
-target="_blank">
-
-Leave a Review
-
-</a>
-
-</section>
-  
 <footer>
 
   © 2026 Valluri Tutoring Center
 
 </footer>
 
+
 </body>
+
 </html>
